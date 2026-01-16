@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
       },
       plugins: [react()],
           '@': path.resolve(__dirname, '.'),
-        }
-      }
+        },
+      },
     };
 });
