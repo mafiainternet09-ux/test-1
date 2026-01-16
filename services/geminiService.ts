@@ -6,7 +6,7 @@ export async function generatePotteryImage(
   referenceImage: { data: string; mimeType: string; } | null,
   isEdit: boolean = false
 ): Promise<string> {
-  const API_KEY = process.env.API_KEY;
+  const API_KEY = import.meta.env.VITE_GEMINI_API_Key;
 
   if (!API_KEY) {
     throw new Error("Không tìm thấy API_KEY. Vui lòng cấu hình Environment Variable trên Vercel.");
